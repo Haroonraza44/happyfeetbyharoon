@@ -417,11 +417,12 @@ font-family: 'Signika', sans-serif;
         font-family: fantasy;
         font-size: 2rem;
         transition: all .3s;
+        z-index: 14
      }
      
      .featured-content .featured-product .featured-product-price{
         position: absolute;
-        color: lightgray;
+        color: white;
         height: 50%;
         width: 90%;
         left: 222%;
@@ -430,6 +431,7 @@ font-family: 'Signika', sans-serif;
         opacity: .6;
         font-family: fantasy;
         font-size: 3rem;
+        z-index: 14;
         transition: all .3s;
      }
      
@@ -438,6 +440,7 @@ font-family: 'Signika', sans-serif;
         width: 40%;
         left: 222%;
         display: none;
+        z-index: 14;
         font-size: 2rem;
         transition: all .3s;
      }
@@ -451,10 +454,11 @@ font-family: 'Signika', sans-serif;
          position: absolute;
          left: 0;
          top: 0;
+         z-index: 12
 
      }
      .featured-content .featured-product:hover::before {
-         background-color: rgba(0, 0, 0, .7);
+         background-color: rgba(0, 0, 0, .8);
 
      }
      .featured-content .featured-product:hover .featured-product-price,
@@ -462,6 +466,7 @@ font-family: 'Signika', sans-serif;
 left: 60%;
 transform: translateX(-50%);
 display: inline-block;
+font-weight: 700;
 
     }
     
@@ -580,7 +585,7 @@ padding: 0;
 
      .category .product {
 
-         background-image: linear-gradient(to top, rgba(240, 242, 244, .5), rgba(234, 236, 240, .6));
+         background-image: linear-gradient(to top, rgba(245, 245, 245, .9), rgba(245, 245, 245, .6));
          margin-bottom: 2rem;
          border: 1px solid white;
          padding: 2rem;
@@ -635,6 +640,7 @@ padding: 0;
          position: absolute;
          top: 1rem;
          right: 1rem;
+         z-index: 10
 
      }
 
@@ -646,8 +652,9 @@ padding: 0;
          position: absolute;
          border-radius: 5% 20% 40% 10%;
          right: 3.5rem;
-         top: 1rem;
+         top: -1rem;
          opacity: 0;
+         z-index: 20
      }
 
      .category .product i.fa-heart:hover+span {
